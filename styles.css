@@ -1,0 +1,416 @@
+@font-face {
+  font-family: 'Ghibli Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Ghibli Regular'), url('Eyad Al-Samman - Ghibli.woff') format('woff');
+}
+@font-face {
+  font-family: 'Ghibli Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Ghibli Bold'), url('Eyad Al-Samman - Ghibli-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Zoltana-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./Zoltana-Regular.ttf');
+}
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+img {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+body {
+  background-color: #171717;
+}
+h1 {
+  font-family: 'Zoltana-Regular', Arial, sans-serif;
+  color: #fffff0;
+}
+h2 {
+  font-family: 'Zoltana-Regular', Arial, sans-serif;
+  color: #fffff0;
+}
+h3 {
+  font-family: 'Ghibli Bold', Arial, sans-serif;
+  color: #fffff0;
+}
+h4 {
+  font-family: 'Ghibli Bold', Arial, sans-serif;
+  color: #fffff0;
+}
+p {
+  font-family: 'Ghibli Regular', Arial, sans-serif;
+  color: #fffff0;
+  letter-spacing: 0.2px;
+}
+a {
+  color: #fffff0;
+  text-decoration: underline;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+#mobile-main {
+  display: none;
+}
+.center {
+  text-align: center;
+}
+.golden-gradient-brown-wrapper {
+  background: linear-gradient(to right, #f7e77c, #9e7216);
+  padding: 2px;
+}
+.golden-gradient-brown-wrapper .golden-gradient-brown-content {
+  background: #130e03;
+}
+.golden-gradient-black-wrapper {
+  background: linear-gradient(to right, #9e7216, #f7e77c);
+  padding: 2px;
+}
+.golden-gradient-black-wrapper .golden-gradient-black-content {
+  background: #000;
+}
+.gc-primary-em {
+  text-shadow: #fc0 1px 0 10px;
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  display: block;
+}
+.gc-secondary-em {
+  text-shadow: #fc0 1px 0 2px;
+  color: #f7e77c;
+}
+.gc-tertiary-em {
+  text-shadow: #fc0 1px 0 10px;
+}
+#desktop-main {
+  margin: 0 auto;
+}
+#desktop-main #gc-hero-banner {
+  background-image: url('./assets/ghibli_nighttime_mail_center.png');
+  background-size: 100%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#desktop-main #gc-hero-banner #gc-banner {
+  background-image: url('./assets/ghibli_gc_banner_blank.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#desktop-main #gc-hero-banner #gc-banner h1 {
+  font-family: 'Ghibli Bold', Arial, sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: #FC0 1px 0 10px;
+  letter-spacing: 2px;
+}
+#desktop-main #intro-mod {
+  margin-bottom: 20px;
+}
+#desktop-main #intro-mod #intro-content .c1 h2 {
+  padding: 5px 20px;
+}
+#desktop-main #intro-mod #intro-content .c1 p {
+  padding: 10px 30px;
+  font-size: 20px;
+  line-height: 30px;
+}
+#desktop-main #intro-mod #intro-content .c2 {
+  width: 40%;
+}
+#desktop-main #operation-mod {
+  margin-bottom: 20px;
+}
+#desktop-main #operation-mod h3 {
+  padding: 40px 0 20px;
+}
+#desktop-main #operation-mod .c1 {
+  width: 50%;
+  padding-right: 5px;
+}
+#desktop-main #operation-mod .c1 #operation-container .tile h4 {
+  line-height: 148px;
+  font-family: 'Zoltana-Regular', Arial, sans-serif;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#desktop-main #operation-mod .c1 #operation-container .tile h4:hover {
+  font-size: 3.3rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#desktop-main #operation-mod .c1 #operation-container .tile-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_city_bg_tile.png');
+  background-size: 100%;
+}
+#desktop-main #operation-mod .c1 #operation-container .tile-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountainside_town_2_to_1_ar_tile.png');
+  background-size: 100%;
+  margin: 12px 0;
+}
+#desktop-main #operation-mod .c1 #operation-container .tile-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountain_bg_tile.png');
+  background-size: 100%;
+  margin: 12px 0;
+}
+#desktop-main #operation-mod .c1 #operation-container .tile-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_cafe_1_to_1_ar_tile.png');
+  background-size: 100%;
+}
+#desktop-main #operation-mod .c2 {
+  width: 50%;
+  height: 100%;
+  padding-left: 5px;
+}
+#desktop-main #operation-mod .c2 .golden-gradient-brown-wrapper,
+#desktop-main #operation-mod .c2 .golden-gradient-brown-content {
+  height: 100%;
+}
+#desktop-main #operation-mod .c2 h4.headline {
+  padding: 25px 20px 5px;
+  font-family: 'Zoltana-Regular', Arial, sans-serif;
+}
+#desktop-main #operation-mod .c2 p {
+  padding: 10px 30px;
+  font-size: 20px;
+  line-height: 30px;
+}
+#desktop-main #operation-mod .c2 #experience-cover,
+#desktop-main #operation-mod .c2 #experience-1 {
+  transition: all 1s ease;
+}
+@media only screen and (max-width: 749px) {
+  #desktop-main {
+    display: none;
+  }
+  #mobile-main {
+    display: block;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 991px) {
+  #desktop-main {
+    width: 685px;
+  }
+  #desktop-main #gc-hero-banner {
+    height: 400px;
+  }
+  #desktop-main #gc-hero-banner #gc-banner {
+    height: 130px;
+    background-size: 340px 100px;
+  }
+  #desktop-main #gc-hero-banner #gc-banner h1 {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  #desktop-main #gc-hero-banner #gc-banner h1.main-banner-header {
+    padding: 26px 0 0;
+  }
+  #desktop-main #gc-hero-banner #gc-banner h1.sub-banner-header {
+    padding: 3px 0 0;
+  }
+  #desktop-main #intro-mod #intro-content .c1 {
+    padding: 30px;
+  }
+  #desktop-main #intro-mod #intro-content .c1.stacked,
+  #desktop-main #intro-mod #intro-content .c2.stacked {
+    display: block;
+  }
+  #desktop-main #intro-mod #intro-content .c2.stacked {
+    width: 100%;
+  }
+  #desktop-main #operation-mod {
+    margin-bottom: 20px;
+  }
+  #desktop-main #operation-mod .c1 #operation-container .tile h4 {
+    line-height: 168px;
+    font-size: 38px;
+  }
+  #desktop-main #operation-mod .c1 #operation-container .tile h4:hover {
+    font-size: 3rem;
+  }
+  #desktop-main #operation-mod .c1 #operation-container .tile.tile-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_city_bg.png');
+    background-size: 100%;
+  }
+  #desktop-main #operation-mod .c1 #operation-container .tile.tile-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountainside_town_2_to_1_ar.png');
+    background-size: 100%;
+  }
+  #desktop-main #operation-mod .c1 #operation-container .tile.tile-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountain_bg.png');
+    background-size: 100%;
+  }
+  #desktop-main #operation-mod .c1 #operation-container .tile.tile-4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_cafe_1_to_1_ar.png');
+    background-size: 100%;
+  }
+  #desktop-main #operation-mod .c2 h4.headline {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  #desktop-main #operation-mod .c2 p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #desktop-main {
+    width: 790px;
+  }
+  #desktop-main #gc-hero-banner {
+    height: 500px;
+  }
+  #desktop-main #gc-hero-banner #gc-banner {
+    height: 215px;
+    background-size: 400px 140px;
+  }
+  #desktop-main #gc-hero-banner #gc-banner h1 {
+    font-size: 26px;
+    line-height: 55px;
+  }
+  #desktop-main #gc-hero-banner #gc-banner h1.main-banner-header {
+    padding: 53px 0 0;
+  }
+  #desktop-main #gc-hero-banner #gc-banner h1.sub-banner-header {
+    padding: 5px 0 0;
+  }
+  #desktop-main #intro-mod #intro-content .c1 {
+    padding: 30px;
+  }
+  #desktop-main #intro-mod #intro-content .c1.stacked,
+  #desktop-main #intro-mod #intro-content .c2.stacked {
+    display: block;
+  }
+  #desktop-main #intro-mod #intro-content .c2.stacked {
+    width: 100%;
+  }
+  #desktop-main #operation-mod {
+    margin-bottom: 20px;
+  }
+  #desktop-main #operation-mod .c1 #operation-container .tile h4 {
+    line-height: 170px;
+    font-size: 38px;
+  }
+  #desktop-main #operation-mod .c1 #operation-container .tile h4:hover {
+    font-size: 3rem;
+  }
+  #desktop-main #operation-mod .c1 #operation-container .tile.tile-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_city_bg.png');
+    background-size: 100%;
+  }
+  #desktop-main #operation-mod .c1 #operation-container .tile.tile-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountainside_town_2_to_1_ar.png');
+    background-size: 100%;
+  }
+  #desktop-main #operation-mod .c1 #operation-container .tile.tile-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountain_bg.png');
+    background-size: 100%;
+  }
+  #desktop-main #operation-mod .c1 #operation-container .tile.tile-4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_cafe_1_to_1_ar.png');
+    background-size: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  #desktop-main {
+    width: 1000px;
+  }
+  #desktop-main #gc-hero-banner {
+    height: 600px;
+  }
+  #desktop-main #gc-hero-banner #gc-banner {
+    height: 215px;
+    background-size: 500px 180px;
+  }
+  #desktop-main #gc-hero-banner #gc-banner h1 {
+    font-size: 32px;
+    line-height: 72px;
+  }
+  #desktop-main #gc-hero-banner #gc-banner h1.main-banner-header {
+    padding: 35px 0 0;
+  }
+  #desktop-main #gc-hero-banner #gc-banner h1.sub-banner-header {
+    padding: 6px 0 0;
+  }
+  #desktop-main #intro-mod #intro-content .c1 h2 {
+    padding: 2px 15px;
+    font-size: 38px;
+    line-height: 46px;
+  }
+  #desktop-main #intro-mod #intro-content .c1 p {
+    padding: 10px 25px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  #desktop-main #operation-mod {
+    margin-bottom: 20px;
+  }
+  #desktop-main #operation-mod .c1 {
+    padding-right: 5px;
+  }
+  #desktop-main #operation-mod .c1 #operation-container .tile h4 {
+    line-height: 123px;
+    font-size: 38px;
+  }
+  #desktop-main #operation-mod .c2 {
+    padding-left: 5px;
+  }
+  #desktop-main #operation-mod .c2 h4.headline {
+    padding: 25px 15px 5px;
+    font-size: 38px;
+    line-height: 46px;
+  }
+  #desktop-main #operation-mod .c2 p {
+    padding: 10px 25px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #desktop-main {
+    width: 1200px;
+  }
+  #desktop-main #gc-hero-banner {
+    height: 700px;
+  }
+  #desktop-main #gc-hero-banner #gc-banner {
+    height: 215px;
+    background-size: 600px 200px;
+  }
+  #desktop-main #gc-hero-banner #gc-banner h1 {
+    font-size: 36px;
+    line-height: 80px;
+  }
+  #desktop-main #gc-hero-banner #gc-banner h1.main-banner-header {
+    padding: 30px 0 0;
+  }
+  #desktop-main #gc-hero-banner #gc-banner h1.sub-banner-header {
+    padding: 5px 0 0;
+  }
+}

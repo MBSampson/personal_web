@@ -1,0 +1,506 @@
+@font-face {
+  font-family: 'Ghibli Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Ghibli Regular'), url('Eyad Al-Samman - Ghibli.woff') format('woff');
+}
+  
+@font-face {
+  font-family: 'Ghibli Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Ghibli Bold'), url('Eyad Al-Samman - Ghibli-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Zoltana-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./Zoltana-Regular.ttf'); 
+}
+
+@doc-bg-color: #171717;
+@gc-golden-light: #f7e77c;
+@gc-golden-dark: #9e7216;
+@gc-ivory: #fffff0;
+@ghibli-island-blue: #1a5197;
+@ghibli-island-teal: #0faebd;
+@ghibli-mountain-blue: #204979;
+@golden-company-brown: #130e03;
+@max-width: 1400px;
+@ghibli-reg: 'Ghibli Regular', Arial, sans-serif;
+@ghibli-bold: 'Ghibli Bold', Arial, sans-serif;
+@zoltana-reg: 'Zoltana-Regular', Arial, sans-serif;
+
+body, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+body {
+  background-color: @doc-bg-color; 
+}
+
+h1 {
+  font-family: @zoltana-reg;
+  color: @gc-ivory;
+}
+
+h2 {
+  font-family: @zoltana-reg;
+  color: @gc-ivory;
+}
+
+h3 {
+  font-family: @ghibli-bold;
+  color: @gc-ivory;
+}
+
+h4 {
+  font-family: @ghibli-bold;
+  color: @gc-ivory;
+}
+
+p {
+  font-family: @ghibli-reg;
+  color: @gc-ivory;
+  letter-spacing: 0.2px;
+}
+
+a {
+  color: @gc-ivory;
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#mobile-main {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.golden-gradient-brown-wrapper { 
+  background: linear-gradient(to right, @gc-golden-light, @gc-golden-dark);
+  padding: 2px;
+  .golden-gradient-brown-content {
+    background: @golden-company-brown;
+  }
+}
+
+.golden-gradient-black-wrapper { 
+  background: linear-gradient(to right, @gc-golden-dark, @gc-golden-light);
+  padding: 2px;
+  .golden-gradient-black-content {
+    background: #000;
+  }
+}
+
+.gc-primary-em {
+  text-shadow: #fc0 1px 0 10px;
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  display: block;
+}
+.gc-secondary-em {
+  text-shadow: #fc0 1px 0 2px;
+  color: @gc-golden-light;
+}
+.gc-tertiary-em {
+  text-shadow: #fc0 1px 0 10px; 
+}
+// ========== END GENERAL STYLES ==========
+
+
+// ==================== DESKTOP GENERAL STYLES ====================
+#desktop-main {
+  margin: 0 auto;
+  #gc-hero-banner {
+    background-image: url('./assets/ghibli_nighttime_mail_center.png');
+    background-size: 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat; 
+    width: 100%;
+    margin-bottom: 20px;
+    #gc-banner {
+      background-image: url('./assets/ghibli_gc_banner_blank.png'); 
+      background-position: center;
+      background-repeat: no-repeat;
+      h1 {
+        font-family: @ghibli-bold;
+        color: white; 
+        text-align: center;
+        text-shadow: #FC0 1px 0 10px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+
+  #intro-mod {
+    margin-bottom: 20px;
+    #intro-content {
+      .c1 {
+        h2 {
+          padding: 5px 20px;
+        }
+        p {
+          padding: 10px 30px;
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+      .c2 {
+        width: 40%; 
+      }
+    }
+  }
+
+  #operation-mod {
+    margin-bottom: 20px;
+    h3 {
+      padding: 40px 0 20px;
+    } 
+    .c1 {
+      width: 50%;
+      padding-right: 5px;
+      #operation-container { 
+        .tile {
+          h4 {
+            line-height: 148px;
+            font-family: @zoltana-reg;
+            cursor: pointer;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            &:hover { 
+              font-size: 3.3rem;
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out; 
+            }
+          }
+        } 
+        .tile-1 {
+          background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./assets/operation_tiles/ghibli_city_bg_tile.png'); 
+          background-size: 100%;  
+        }
+        .tile-2 {
+          background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./assets/operation_tiles/ghibli_mountainside_town_2_to_1_ar_tile.png'); 
+          background-size: 100%; 
+          margin: 12px 0; 
+        }
+        .tile-3 {
+          background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./assets/operation_tiles/ghibli_mountain_bg_tile.png'); 
+          background-size: 100%; 
+          margin: 12px 0; 
+        }
+        .tile-4 {
+          background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./assets/operation_tiles/ghibli_cafe_1_to_1_ar_tile.png'); 
+          background-size: 100%; 
+        }
+      } 
+    } 
+    .c2 {
+      width: 50%;
+      height: 100%;
+      padding-left: 5px;
+      .golden-gradient-brown-wrapper, .golden-gradient-brown-content {
+        height: 100%;
+      }
+      h4.headline {
+        padding: 25px 20px 5px;
+        font-family: @zoltana-reg;
+      }
+      p { 
+        padding: 10px 30px;
+        font-size: 20px;
+        line-height: 30px;
+      }
+      #experience-cover, #experience-1 {
+        transition: all 1s ease;
+      }
+    }
+  }
+}
+
+// ==================== MEDIA QUERIES ====================
+// Mobile - all views below 749px - uses seperate view for mobile users
+@media only screen and (max-width: 749px) {
+  #desktop-main {
+    display: none;
+  }
+  #mobile-main {
+    display: block;
+  }
+} 
+
+// Small devices - Tablet-specific
+@media only screen and (min-width: 750px) and (max-width: 991px) {
+  #desktop-main {
+    width: 685px;
+    #gc-hero-banner {
+      height: 400px;
+      #gc-banner {
+        height: 130px;
+        background-size: 340px 100px;
+        h1 {
+          font-size: 20px;
+          line-height: 40px;
+        }
+        h1.main-banner-header {
+          padding: 26px 0 0;
+        }
+        h1.sub-banner-header {
+          padding: 3px 0 0;
+        }
+      }
+    } 
+
+    #intro-mod {
+      #intro-content {
+        .c1 {
+          padding: 30px;
+        }
+        .c1.stacked, .c2.stacked {
+          display: block;  
+        } 
+        .c2.stacked { 
+          width: 100%; 
+        }
+      }
+    }
+
+    // ==================== Operation Module Styles ====================
+    #operation-mod {
+      margin-bottom: 20px; 
+      .c1 { 
+        #operation-container { 
+          .tile {
+            h4 {
+              line-height: 168px; 
+              font-size: 38px; 
+              &:hover { 
+                font-size: 3rem;
+              }
+            }
+            &.tile-1 { 
+              background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_city_bg.png');
+              background-size: 100%;
+            }
+            &.tile-2 {
+              background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountainside_town_2_to_1_ar.png');
+              background-size: 100%;
+            }
+            &.tile-3 {
+              background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountain_bg.png');
+              background-size: 100%;
+            }
+            &.tile-4 {
+              background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_cafe_1_to_1_ar.png');
+              background-size: 100%;
+            }
+          }  
+        } 
+      }   
+      .c2 {
+        h4.headline {  
+          font-size: 2.2rem;
+          line-height: 3rem; 
+        }
+        p {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+    }
+    // ==================== END Operation Module Styles ====================
+  }
+}
+ 
+
+// Medium devices 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #desktop-main {
+    width: 790px;
+    #gc-hero-banner {
+      height: 500px; 
+      #gc-banner {
+        height: 215px;
+        background-size: 400px 140px; 
+        h1 {
+          font-size: 26px;
+          line-height: 55px;
+        }
+        h1.main-banner-header {
+          padding: 53px 0 0;
+        }
+        h1.sub-banner-header {
+          padding: 5px 0 0;
+        }
+      }
+    }
+
+    #intro-mod {
+      #intro-content {
+        .c1 {
+          padding: 30px;
+        }
+        .c1.stacked, .c2.stacked {
+          display: block;  
+        } 
+        .c2.stacked { 
+          width: 100%; 
+        }
+      }
+    }
+
+    // ==================== Operation Module Styles ====================
+    #operation-mod {
+      margin-bottom: 20px; 
+      .c1 { 
+        #operation-container { 
+          .tile {
+            h4 {
+              line-height: 170px; 
+              font-size: 38px; 
+              &:hover { 
+                font-size: 3rem;
+              }
+            }
+            &.tile-1 { 
+              background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_city_bg.png');
+              background-size: 100%;
+            }
+            &.tile-2 {
+              background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountainside_town_2_to_1_ar.png');
+              background-size: 100%;
+            }
+            &.tile-3 {
+              background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountain_bg.png');
+              background-size: 100%;
+            }
+            &.tile-4 {
+              background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_cafe_1_to_1_ar.png');
+              background-size: 100%;
+            }
+          }  
+        } 
+      }   
+    }
+    // ==================== END Operation Module Styles ====================
+  }
+}
+
+// Large devices
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  #desktop-main {
+    width: 1000px;
+    #gc-hero-banner {
+      height: 600px; 
+      #gc-banner {
+        height: 215px;
+        background-size: 500px 180px; 
+        h1 {
+          font-size: 32px;
+          line-height: 72px; 
+        }
+        h1.main-banner-header {
+          padding: 35px 0 0;
+        }
+        h1.sub-banner-header {
+          padding: 6px 0 0;
+        }
+      }
+    }
+
+    #intro-mod {
+      #intro-content {
+        .c1 {
+          h2 {
+            padding: 2px 15px;
+            font-size: 38px;
+            line-height: 46px;
+          }
+          p {
+            padding: 10px 25px;
+            font-size: 18px;
+            line-height: 26px;
+          }
+        } 
+      }
+    }
+
+    // ==================== Operation Module Styles ====================
+    #operation-mod {
+      margin-bottom: 20px;
+      .c1 { 
+        padding-right: 5px;
+        #operation-container { 
+          .tile {
+            h4 {
+              line-height: 123px;  
+              font-size: 38px; 
+            }
+          }  
+        } 
+      } 
+      .c2 { 
+        padding-left: 5px; 
+        h4.headline { 
+          padding: 25px 15px 5px;
+          font-size: 38px;
+          line-height: 46px; 
+        }
+        p { 
+          padding: 10px 25px;
+          font-size: 18px;
+          line-height: 26px;
+        }  
+      }
+    }
+    // ==================== END Operation Module Styles ====================
+  }
+}
+
+// XLarge devices
+@media only screen and (min-width: 1400px) {
+  #desktop-main {
+    width: 1200px;
+    #gc-hero-banner {
+      height: 700px;  
+      #gc-banner {
+        height: 215px;
+        background-size: 600px 200px;
+        h1 {
+          font-size: 36px;
+          line-height: 80px; 
+        }
+        h1.main-banner-header {
+          padding: 30px 0 0;
+        }
+        h1.sub-banner-header {
+          padding: 5px 0 0;
+        }
+      }
+    }
+  } 
+}
