@@ -16,6 +16,18 @@
   font-weight: normal;
   src: url('./Zoltana-Regular.ttf');
 }
+@font-face {
+  font-family: 'Fontin-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./Fontin_Sans_r_45b.otf');
+}
+@font-face {
+  font-family: 'Saint-Carell-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./SaintCarell_reg.otf');
+}
 body,
 p,
 h1,
@@ -89,27 +101,27 @@ a {
 }
 .gc-primary-em {
   text-shadow: #fc0 1px 0 10px;
-  font-size: 3.2rem;
-  line-height: 3.6rem;
   display: block;
+  font-size: 3rem;
+  line-height: 3.6rem;
 }
 .gc-secondary-em {
-  text-shadow: #fc0 1px 0 2px;
+  text-shadow: #fc0 1px 0 1px;
   color: #f7e77c;
 }
 .gc-tertiary-em {
-  text-shadow: #fc0 1px 0 10px;
+  text-shadow: #fc0 1px 0 5px;
 }
 #desktop-main {
   margin: 0 auto;
 }
 #desktop-main #gc-hero-banner {
+  margin: 2vh auto 10vh;
   background-image: url('./assets/ghibli_nighttime_mail_center.png');
   background-size: 100%;
   background-position: center bottom;
   background-repeat: no-repeat;
   width: 100%;
-  margin-bottom: 20px;
 }
 #desktop-main #gc-hero-banner #gc-banner {
   background-image: url('./assets/ghibli_gc_banner_blank.png');
@@ -124,7 +136,7 @@ a {
   letter-spacing: 2px;
 }
 #desktop-main #intro-mod {
-  margin-bottom: 20px;
+  margin: 0 auto 10vh;
 }
 #desktop-main #intro-mod #intro-content .c1 h2 {
   padding: 5px 20px;
@@ -138,7 +150,7 @@ a {
   width: 40%;
 }
 #desktop-main #operation-mod {
-  margin-bottom: 20px;
+  margin: 0 auto 10vh;
 }
 #desktop-main #operation-mod h3 {
   padding: 40px 0 20px;
@@ -205,6 +217,58 @@ a {
 #desktop-main #operation-mod .c2 #experience-1 {
   transition: all 1s ease;
 }
+#desktop-main #journey-mod {
+  text-align: center;
+  margin-bottom: 10vh;
+  background-color: #1d130e;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./assets/ghibli_mailclerk_banner_faded.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 10vh 0;
+}
+#desktop-main #journey-mod #journey-container h2 {
+  font-family: 'Saint-Carell-Regular', Arial, sans-serif;
+  color: #fffff0;
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+}
+#desktop-main #journey-mod #journey-container p.subhead {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+#desktop-main #journey-mod #journey-container img {
+  margin: 0 auto;
+}
+#desktop-main #journey-mod #journey-container #gallery-container .tile {
+  width: 25%;
+  padding: 0 25px;
+  text-align: left;
+}
+#desktop-main #journey-mod #journey-container #gallery-container .tile div {
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: #130e03;
+  border-radius: 25px;
+  border: 1px solid #fffff0;
+  padding-bottom: 20px;
+}
+#desktop-main #journey-mod #journey-container #gallery-container .tile div p {
+  padding: 15px 20px 0;
+}
+#desktop-main #journey-mod #journey-container #gallery-container .tile div img {
+  border-radius: 25px;
+}
+#desktop-main #journey-mod #journey-container #gallery-container .tile div .medium {
+  font-size: 14px;
+  line-height: 20px;
+  color: #454a48;
+}
+#desktop-main #journey-mod #journey-container #gallery-container .tile div .title {
+  font-family: 'Saint-Carell-Regular', Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+}
 @media only screen and (max-width: 749px) {
   #desktop-main {
     display: none;
@@ -214,11 +278,9 @@ a {
   }
 }
 @media only screen and (min-width: 750px) and (max-width: 991px) {
-  #desktop-main {
-    width: 685px;
-  }
   #desktop-main #gc-hero-banner {
     height: 400px;
+    width: 685px;
   }
   #desktop-main #gc-hero-banner #gc-banner {
     height: 130px;
@@ -234,6 +296,9 @@ a {
   #desktop-main #gc-hero-banner #gc-banner h1.sub-banner-header {
     padding: 3px 0 0;
   }
+  #desktop-main #intro-mod {
+    width: 685px;
+  }
   #desktop-main #intro-mod #intro-content .c1 {
     padding: 30px;
   }
@@ -245,6 +310,7 @@ a {
     width: 100%;
   }
   #desktop-main #operation-mod {
+    width: 685px;
     margin-bottom: 20px;
   }
   #desktop-main #operation-mod .c1 #operation-container .tile h4 {
@@ -252,7 +318,7 @@ a {
     font-size: 38px;
   }
   #desktop-main #operation-mod .c1 #operation-container .tile h4:hover {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
   #desktop-main #operation-mod .c1 #operation-container .tile.tile-1 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_city_bg.png');
@@ -280,11 +346,9 @@ a {
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  #desktop-main {
-    width: 790px;
-  }
   #desktop-main #gc-hero-banner {
     height: 500px;
+    width: 790px;
   }
   #desktop-main #gc-hero-banner #gc-banner {
     height: 215px;
@@ -300,6 +364,9 @@ a {
   #desktop-main #gc-hero-banner #gc-banner h1.sub-banner-header {
     padding: 5px 0 0;
   }
+  #desktop-main #intro-mod {
+    width: 790px;
+  }
   #desktop-main #intro-mod #intro-content .c1 {
     padding: 30px;
   }
@@ -311,6 +378,7 @@ a {
     width: 100%;
   }
   #desktop-main #operation-mod {
+    width: 790px;
     margin-bottom: 20px;
   }
   #desktop-main #operation-mod .c1 #operation-container .tile h4 {
@@ -338,11 +406,9 @@ a {
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  #desktop-main {
-    width: 1000px;
-  }
   #desktop-main #gc-hero-banner {
     height: 600px;
+    width: 1000px;
   }
   #desktop-main #gc-hero-banner #gc-banner {
     height: 215px;
@@ -358,6 +424,9 @@ a {
   #desktop-main #gc-hero-banner #gc-banner h1.sub-banner-header {
     padding: 6px 0 0;
   }
+  #desktop-main #intro-mod {
+    width: 1000px;
+  }
   #desktop-main #intro-mod #intro-content .c1 h2 {
     padding: 2px 15px;
     font-size: 38px;
@@ -370,13 +439,13 @@ a {
   }
   #desktop-main #operation-mod {
     margin-bottom: 20px;
+    width: 1000px;
   }
   #desktop-main #operation-mod .c1 {
     padding-right: 5px;
   }
   #desktop-main #operation-mod .c1 #operation-container .tile h4 {
     line-height: 123px;
-    font-size: 38px;
   }
   #desktop-main #operation-mod .c2 {
     padding-left: 5px;
@@ -393,11 +462,13 @@ a {
   }
 }
 @media only screen and (min-width: 1400px) {
-  #desktop-main {
+  #desktop-main #intro-mod,
+  #desktop-main #operation-mod {
     width: 1200px;
   }
   #desktop-main #gc-hero-banner {
     height: 700px;
+    width: 1200px;
   }
   #desktop-main #gc-hero-banner #gc-banner {
     height: 215px;
