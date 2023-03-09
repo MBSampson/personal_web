@@ -217,56 +217,72 @@ a {
 #desktop-main #operation-mod .c2 #experience-1 {
   transition: all 1s ease;
 }
-#desktop-main #journey-mod {
+#desktop-main #portfolio-mod {
   text-align: center;
   margin-bottom: 10vh;
-  background-color: #1d130e;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./assets/ghibli_mailclerk_banner_faded.png');
+  background-color: #151006;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), #000000), url('./assets/ghibli_mailclerk_banner_faded.png');
   background-position: top;
   background-repeat: no-repeat;
   padding: 10vh 0;
 }
-#desktop-main #journey-mod #journey-container h2 {
+#desktop-main #portfolio-mod #portfolio-container h2 {
   font-family: 'Saint-Carell-Regular', Arial, sans-serif;
   color: #fffff0;
   font-size: 3.2rem;
   margin-bottom: 10px;
 }
-#desktop-main #journey-mod #journey-container p.subhead {
+#desktop-main #portfolio-mod #portfolio-container p.subhead {
   font-size: 20px;
   line-height: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
-#desktop-main #journey-mod #journey-container img {
+#desktop-main #portfolio-mod #portfolio-container img {
   margin: 0 auto;
 }
-#desktop-main #journey-mod #journey-container #gallery-container .tile {
-  width: 25%;
+#desktop-main #portfolio-mod #portfolio-container #gallery-container .tile {
   padding: 0 25px;
   text-align: left;
 }
-#desktop-main #journey-mod #journey-container #gallery-container .tile div {
+#desktop-main #portfolio-mod #portfolio-container #gallery-container .tile .tile-item-bg {
+  background-color: #fffff0;
+  max-width: 302px;
+}
+#desktop-main #portfolio-mod #portfolio-container #gallery-container .tile .tile-item-bg .tile-container {
+  margin: 4px;
   max-width: 300px;
-  margin: 0 auto;
+}
+#desktop-main #portfolio-mod #portfolio-container #gallery-container .tile div {
+  margin: 0 auto 25px;
   background-color: #130e03;
   border-radius: 25px;
-  border: 1px solid #fffff0;
-  padding-bottom: 20px;
 }
-#desktop-main #journey-mod #journey-container #gallery-container .tile div p {
-  padding: 15px 20px 0;
+#desktop-main #portfolio-mod #portfolio-container #gallery-container .tile div p {
+  padding: 15px 20px 7px;
 }
-#desktop-main #journey-mod #journey-container #gallery-container .tile div img {
+#desktop-main #portfolio-mod #portfolio-container #gallery-container .tile div img {
   border-radius: 25px;
 }
-#desktop-main #journey-mod #journey-container #gallery-container .tile div .medium {
+#desktop-main #portfolio-mod #portfolio-container #gallery-container .tile div .medium {
   font-size: 14px;
   line-height: 20px;
   color: #454a48;
 }
-#desktop-main #journey-mod #journey-container #gallery-container .tile div .title {
+#desktop-main #portfolio-mod #portfolio-container #gallery-container .tile div .title {
   font-family: 'Saint-Carell-Regular', Arial, sans-serif;
   font-size: 24px;
+  line-height: 30px;
+}
+#desktop-main #portfolio-mod #portfolio-container #gallery-container .tile div a {
+  padding: 15px 0 21px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-family: 'Fontin-Regular', Arial, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  font-size: 18px;
   line-height: 30px;
 }
 @media only screen and (max-width: 749px) {
@@ -379,7 +395,6 @@ a {
   }
   #desktop-main #operation-mod {
     width: 790px;
-    margin-bottom: 20px;
   }
   #desktop-main #operation-mod .c1 #operation-container .tile h4 {
     line-height: 170px;
@@ -438,7 +453,6 @@ a {
     line-height: 26px;
   }
   #desktop-main #operation-mod {
-    margin-bottom: 20px;
     width: 1000px;
   }
   #desktop-main #operation-mod .c1 {

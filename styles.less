@@ -278,15 +278,15 @@ a {
   // ==================== END Operation Mod Styles ====================
 
   // ==================== Journey Mod Styles ====================
-  #journey-mod {
+  #portfolio-mod {
     text-align: center;  
     margin-bottom: @module-bot-margin; 
-    background-color: #1d130e;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('./assets/ghibli_mailclerk_banner_faded.png');
+    background-color: #151006;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) ), url('./assets/ghibli_mailclerk_banner_faded.png');
     background-position: top;
     background-repeat: no-repeat;
     padding: 10vh 0;
-    #journey-container {
+    #portfolio-container {
       h2 {
         font-family: @saint-reg;
         color: @gc-ivory; 
@@ -296,25 +296,29 @@ a {
       p.subhead {
         font-size: 20px;
         line-height: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
       }
       img {
         margin: 0 auto;
       }
       #gallery-container { 
-        .tile {
-          width: 25%;
+        .tile { 
           padding: 0 25px;
           text-align: left;
+          .tile-item-bg {
+            background-color: @gc-ivory;
+            max-width: 302px;
+            .tile-container {
+              margin: 4px;
+              max-width: 300px;
+            }
+          }
           div {
-            max-width: 300px;
-            margin: 0 auto;
+            margin: 0 auto 25px;
             background-color: @golden-company-brown;
-            border-radius: 25px;
-            border: 1px solid @gc-ivory;
-            padding-bottom: 20px;
+            border-radius: 25px;  
             p {
-              padding: 15px 20px 0;
+              padding: 15px 20px 7px;
             }
             img {
               border-radius: 25px;
@@ -327,6 +331,18 @@ a {
             .title {
               font-family: @saint-reg;
               font-size: 24px;
+              line-height: 30px;
+            }
+            a {
+              padding: 15px 0 21px;
+              text-align: center;
+              width: 100%;
+              display: block;
+              font-family: @fontin-reg;
+              text-transform: uppercase;
+              text-decoration: none;
+              letter-spacing: 0.2px;
+              font-size: 18px;
               line-height: 30px;
             }
           }
@@ -474,8 +490,7 @@ a {
 
     // ==================== Operation Module Styles ====================
     #operation-mod {
-      width: @md-mod-width;
-      margin-bottom: 20px; 
+      width: @md-mod-width; 
       .c1 { 
         #operation-container { 
           .tile {
@@ -552,8 +567,7 @@ a {
     }
 
     // ==================== Operation Module Styles ====================
-    #operation-mod {
-      margin-bottom: 20px;
+    #operation-mod { 
       width: @lg-mod-width;
       .c1 { 
         padding-right: 5px;
