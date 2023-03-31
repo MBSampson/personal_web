@@ -38,8 +38,9 @@
 // Colors
 @doc-bg-color: #171717;
 @gc-golden-light: #f7e77c;
-@gc-golden-dark: #9e7216;
+@gc-golden-dark: #996e12;
 @gc-ivory: #fffff0;
+@gc-footer-bg: #18191c; 
 @ghibli-island-blue: #1a5197;
 @ghibli-island-teal: #0faebd;
 @ghibli-mountain-blue: #204979;
@@ -86,7 +87,7 @@ h1 {
 }
 
 h2 {
-  font-family: @zoltana-reg;
+  font-family: @saint-reg;
   color: @gc-ivory;
 }
 
@@ -96,7 +97,7 @@ h3 {
 }
 
 h4 {
-  font-family: @ghibli-bold;
+  font-family: @saint-reg;
   color: @gc-ivory;
 }
 
@@ -162,44 +163,56 @@ a {
 // ==================== DESKTOP STYLES ====================
 #desktop-main {
   margin: 0 auto;
-  #gc-hero-banner {
-    margin: 2vh auto @module-bot-margin; 
-    background-image: url('./assets/ghibli_nighttime_mail_center.png');
-    background-size: 100%;
-    background-position: center bottom;
-    background-repeat: no-repeat; 
-    width: 100%; 
-    #gc-banner {
-      background-image: url('./assets/ghibli_gc_banner_blank.png'); 
-      background-position: center;
-      background-repeat: no-repeat;
-      h1 {
-        font-family: @ghibli-bold;
-        color: white; 
-        text-align: center;
-        text-shadow: #FC0 1px 0 10px;
-        letter-spacing: 2px;
+
+  // ==================== Hero Styles ====================
+  #hero {
+    padding: 4vh 0 0;
+    margin: 0 auto @module-bot-margin; 
+    .title {
+      .c2 {
+        padding: 10px 25px; 
+        .name {
+          text-shadow: none;
+          font-size: 3.8rem;
+          letter-spacing: 1px;
+        }
       }
     }
-  }
+    .nav { 
+      padding: 1vh 0 4vh;
+      .c2 {
+        padding: 0 40px;
+      }
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.4px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  } 
 
   // ==================== Intro Mod Styles ====================
   #intro-mod {
     margin: 0 auto @module-bot-margin; 
-    #intro-content {
-      .c1 {
-        h2 {
-          padding: 5px 20px;
-        }
-        p {
-          padding: 10px 30px;
-          font-size: 20px;
-          line-height: 30px;
-        }
+    .intro-subhead {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 30px;
+      line-height: 42px;
+      padding-bottom: 10vh;
+    }
+    #intro-content { 
+      padding: 5vh 2vh;
+      h2 {
+        padding: 5px 30px;
       }
-      .c2 {
-        width: 40%; 
-      }
+      p {
+        padding: 10px 40px;
+        font-size: 20px;
+        line-height: 30px;
+      }  
     }
   }
   // ==================== END Intro Mod Styles ====================
@@ -207,17 +220,29 @@ a {
   // ==================== Operation Mod Styles ====================
   #operation-mod {
     margin: 0 auto @module-bot-margin; 
+    h2 {
+      font-size: 4.2rem;
+      text-align: center; 
+    }
+    h2.main-headline {
+      margin: 10vh 0 5vh;
+    }
     h3 {
       padding: 40px 0 20px;
     } 
+    h3.headline-role {
+      padding: 10px 30px 0;
+      text-align: left;
+      margin-bottom: 10px; 
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-decoration: underline;
+    }
     .c1 {
-      width: 50%;
-      padding-right: 5px;
+      width: 45%; 
       #operation-container { 
         .tile {
           h4 {
-            line-height: 148px;
-            font-family: @zoltana-reg;
+            line-height: 148px; 
             cursor: pointer;
             -webkit-transition: all 0.3s ease-in-out;
             -moz-transition: all 0.3s ease-in-out;
@@ -239,36 +264,38 @@ a {
           background-size: 100%;  
         }
         .tile-2 {
+          background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./assets/operation_tiles/ghibli_nest_renew_1_to_1_ar_tile.png'); 
+          background-size: 100%;  
+          margin: 12px 0; 
+        }
+        .tile-3 {
           background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./assets/operation_tiles/ghibli_mountainside_town_2_to_1_ar_tile.png'); 
           background-size: 100%; 
           margin: 12px 0; 
         }
-        .tile-3 {
-          background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./assets/operation_tiles/ghibli_mountain_bg_tile.png'); 
+        .tile-4 {
+          background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./assets/operation_tiles/ghibli_cds_1_to_1_ar_tile.png'); 
           background-size: 100%; 
           margin: 12px 0; 
         }
-        .tile-4 {
+        .tile-5 {
           background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./assets/operation_tiles/ghibli_cafe_1_to_1_ar_tile.png'); 
           background-size: 100%; 
         }
       } 
     } 
     .c2 {
-      width: 50%;
+      width: 55%;
       height: 100%;
-      padding-left: 5px;
-      .golden-gradient-brown-wrapper, .golden-gradient-brown-content {
-        height: 100%;
-      }
-      h4.headline {
-        padding: 25px 20px 5px;
-        font-family: @zoltana-reg;
+      padding: 5%; 
+      h2.headline {
+        padding: 30px 20px 15px;
       }
       p { 
         padding: 10px 30px;
         font-size: 20px;
         line-height: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
       }
       #experience-cover, #experience-1 {
         transition: all 1s ease;
@@ -277,26 +304,28 @@ a {
   }
   // ==================== END Operation Mod Styles ====================
 
-  // ==================== Journey Mod Styles ====================
+  // ==================== Portfolio Mod Styles ====================
   #portfolio-mod {
-    text-align: center;  
-    margin-bottom: @module-bot-margin; 
+    text-align: center;   
     background-color: #151006;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) ), url('./assets/ghibli_mailclerk_banner_faded.png');
+    background-image: linear-gradient( rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 1) ), url('./assets/ghibli_mailclerk_banner_faded.png');
     background-position: top;
     background-repeat: no-repeat;
+    background-size: 100%;
     padding: 10vh 0;
     #portfolio-container {
       h2 {
         font-family: @saint-reg;
         color: @gc-ivory; 
         font-size: 3.2rem;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
       }
       p.subhead {
         font-size: 20px;
         line-height: 30px;
         margin-bottom: 40px;
+        padding: 0 50px;
+        font-family: Georgia, Arial, sans-serif;
       }
       img {
         margin: 0 auto;
@@ -305,24 +334,22 @@ a {
         .tile { 
           padding: 0 25px;
           text-align: left;
-          .tile-item-bg {
-            background-color: @gc-ivory;
-            max-width: 302px;
+          .tile-item-bg { 
             .tile-container {
               margin: 4px;
-              max-width: 300px;
+              min-width: 300px;
+              max-width: 400px;
+              min-height: 600px;
             }
           }
           div {
-            margin: 0 auto 25px;
-            background-color: @golden-company-brown;
-            border-radius: 25px;  
+            margin: 0 auto 45px;
+            background-color: @golden-company-brown; 
+            box-shadow: 0.1rem 0.2rem #f7e77c, -0.1rem -0.2rem #996e12;
             p {
               padding: 15px 20px 7px;
-            }
-            img {
-              border-radius: 25px;
-            }
+              font-family: Georgia, Arial, sans-serif; 
+            } 
             .medium {
               font-size: 14px;
               line-height: 20px;
@@ -334,16 +361,15 @@ a {
               line-height: 30px;
             }
             a {
-              padding: 15px 0 21px;
-              text-align: center;
+              padding: 15px 20px 21px;
+              text-align: left;
               width: 100%;
               display: block;
-              font-family: @fontin-reg;
-              text-transform: uppercase;
-              text-decoration: none;
+              font-family: Georgia, Arial, sans-serif;  
+              text-decoration: underline;
               letter-spacing: 0.2px;
               font-size: 18px;
-              line-height: 30px;
+              line-height: 30px;  
             }
           }
         } 
@@ -351,6 +377,54 @@ a {
     }
   }
   // ==================== END Journey Mod Styles ====================
+
+  // ==================== Origins Mod Styles ====================
+  #origins-mod {
+    background-image: url('./assets/ghibli_workshop_wide_v2.png');
+    background-size: 100%;
+    background-position: top;
+    padding: 10vh 0;
+    .golden-gradient-brown-wrapper {
+      width: 60%;
+      margin: 0 auto;
+      .golden-gradient-brown-content {
+        h2 {
+          font-size: 3.2rem;
+          padding: 10vh 0;
+        }
+      }
+    }
+  }
+}
+ 
+footer { 
+  background-color: @golden-company-gray;
+  border-top: 1px solid @gc-golden-light;
+  #inner-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10vh 0 6vh;
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      font-family: Georgia, Arial, sans-serif;
+    }
+    .title {
+      margin-bottom: 15px;
+    }
+    .logo {
+      margin: 0 auto 20px; 
+      border-radius: 25px;
+    } 
+    .social {
+      font-size: 24px;
+      color: @gc-ivory;
+      margin-bottom: 15px;
+      td {
+        padding: 15px 25px; 
+      }
+    }
+  }
 }
 
 // ==================== MEDIA QUERIES ====================
@@ -368,25 +442,7 @@ a {
 // Small devices - Tablet-specific
 @media only screen and (min-width: 750px) and (max-width: 991px) {
   #desktop-main {
-    #gc-hero-banner {
-      height: 400px;
-      width: @sm-mod-width;
-      #gc-banner {
-        height: 130px;
-        background-size: 340px 100px;
-        h1 {
-          font-size: 20px;
-          line-height: 40px;
-        }
-        h1.main-banner-header {
-          padding: 26px 0 0;
-        }
-        h1.sub-banner-header {
-          padding: 3px 0 0;
-        }
-      }
-    } 
-
+    
     #intro-mod {
       width: @sm-mod-width;
       #intro-content {
@@ -403,8 +459,7 @@ a {
     }
 
     // ==================== Operation Module Styles ====================
-    #operation-mod {
-      width: @sm-mod-width;
+    #operation-mod { 
       margin-bottom: 20px; 
       .c1 { 
         #operation-container { 
@@ -421,14 +476,18 @@ a {
               background-size: 100%;
             }
             &.tile-2 {
-              background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountainside_town_2_to_1_ar.png');
+              background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_nest_renew_1_to_1_ar.png');
               background-size: 100%;
             }
             &.tile-3 {
-              background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountain_bg.png');
+              background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountainside_town_2_to_1_ar.png');
               background-size: 100%;
             }
             &.tile-4 {
+              background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_cds_1_to_1_ar.png');
+              background-size: 100%; 
+            }
+            &.tile-5 {
               background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_cafe_1_to_1_ar.png');
               background-size: 100%;
             }
@@ -454,25 +513,7 @@ a {
 // Medium devices 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   #desktop-main {
-    #gc-hero-banner {
-      height: 500px; 
-      width: @md-mod-width;
-      #gc-banner {
-        height: 215px;
-        background-size: 400px 140px; 
-        h1 {
-          font-size: 26px;
-          line-height: 55px;
-        }
-        h1.main-banner-header {
-          padding: 53px 0 0;
-        }
-        h1.sub-banner-header {
-          padding: 5px 0 0;
-        }
-      }
-    }
-
+    
     #intro-mod {
       width: @md-mod-width;
       #intro-content {
@@ -489,8 +530,7 @@ a {
     }
 
     // ==================== Operation Module Styles ====================
-    #operation-mod {
-      width: @md-mod-width; 
+    #operation-mod { 
       .c1 { 
         #operation-container { 
           .tile {
@@ -506,14 +546,18 @@ a {
               background-size: 100%;
             }
             &.tile-2 {
-              background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountainside_town_2_to_1_ar.png');
+              background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_nest_renew_1_to_1_ar.png');
               background-size: 100%;
             }
             &.tile-3 {
-              background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountain_bg.png');
+              background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountainside_town_2_to_1_ar.png');
               background-size: 100%;
             }
             &.tile-4 {
+              background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_cds_1_to_1_ar.png');
+              background-size: 100%;
+            }
+            &.tile-5 {
               background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_cafe_1_to_1_ar.png');
               background-size: 100%;
             }
@@ -529,31 +573,12 @@ a {
 // Large devices
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   #desktop-main {
-    #gc-hero-banner {
-      height: 600px; 
-      width: @lg-mod-width;
-      #gc-banner {
-        height: 215px;
-        background-size: 500px 180px; 
-        h1 {
-          font-size: 32px;
-          line-height: 72px; 
-        }
-        h1.main-banner-header {
-          padding: 35px 0 0;
-        }
-        h1.sub-banner-header {
-          padding: 6px 0 0;
-        }
-      }
-    }
-
+  
     #intro-mod {
       width: @lg-mod-width;
       #intro-content {
         .c1 {
-          h2 {
-            padding: 2px 15px;
+          h2 { 
             font-size: 38px;
             line-height: 46px;
           }
@@ -567,8 +592,7 @@ a {
     }
 
     // ==================== Operation Module Styles ====================
-    #operation-mod { 
-      width: @lg-mod-width;
+    #operation-mod {  
       .c1 { 
         padding-right: 5px;
         #operation-container { 
@@ -581,8 +605,7 @@ a {
       } 
       .c2 { 
         padding-left: 5px; 
-        h4.headline { 
-          padding: 25px 15px 5px;
+        h2.headline {  
           font-size: 38px;
           line-height: 46px; 
         }
@@ -601,26 +624,8 @@ a {
 // XLarge devices
 @media only screen and (min-width: 1400px) {
   #desktop-main {
-    #intro-mod, #operation-mod {
+    #intro-mod {
       width: @xl-mod-width;
     }
-    #gc-hero-banner {
-      height: 700px;  
-      width: @xl-mod-width;
-      #gc-banner {
-        height: 215px;
-        background-size: 600px 200px;
-        h1 {
-          font-size: 36px;
-          line-height: 80px; 
-        }
-        h1.main-banner-header {
-          padding: 30px 0 0;
-        }
-        h1.sub-banner-header {
-          padding: 5px 0 0;
-        }
-      }
-    } 
-  }
+  } 
 } 

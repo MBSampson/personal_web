@@ -53,7 +53,7 @@ h1 {
   color: #fffff0;
 }
 h2 {
-  font-family: 'Zoltana-Regular', Arial, sans-serif;
+  font-family: 'Saint-Carell-Regular', Arial, sans-serif;
   color: #fffff0;
 }
 h3 {
@@ -61,7 +61,7 @@ h3 {
   color: #fffff0;
 }
 h4 {
-  font-family: 'Ghibli Bold', Arial, sans-serif;
+  font-family: 'Saint-Carell-Regular', Arial, sans-serif;
   color: #fffff0;
 }
 p {
@@ -86,14 +86,14 @@ a {
   text-align: center;
 }
 .golden-gradient-brown-wrapper {
-  background: linear-gradient(to right, #f7e77c, #9e7216);
+  background: linear-gradient(to right, #f7e77c, #996e12);
   padding: 2px;
 }
 .golden-gradient-brown-wrapper .golden-gradient-brown-content {
   background: #130e03;
 }
 .golden-gradient-black-wrapper {
-  background: linear-gradient(to right, #9e7216, #f7e77c);
+  background: linear-gradient(to right, #996e12, #f7e77c);
   padding: 2px;
 }
 .golden-gradient-black-wrapper .golden-gradient-black-content {
@@ -115,53 +115,77 @@ a {
 #desktop-main {
   margin: 0 auto;
 }
-#desktop-main #gc-hero-banner {
-  margin: 2vh auto 10vh;
-  background-image: url('./assets/ghibli_nighttime_mail_center.png');
-  background-size: 100%;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  width: 100%;
+#desktop-main #hero {
+  padding: 4vh 0 0;
+  margin: 0 auto 10vh;
 }
-#desktop-main #gc-hero-banner #gc-banner {
-  background-image: url('./assets/ghibli_gc_banner_blank.png');
-  background-position: center;
-  background-repeat: no-repeat;
+#desktop-main #hero .title .c2 {
+  padding: 10px 25px;
 }
-#desktop-main #gc-hero-banner #gc-banner h1 {
-  font-family: 'Ghibli Bold', Arial, sans-serif;
-  color: white;
-  text-align: center;
-  text-shadow: #FC0 1px 0 10px;
-  letter-spacing: 2px;
+#desktop-main #hero .title .c2 .name {
+  text-shadow: none;
+  font-size: 3.8rem;
+  letter-spacing: 1px;
+}
+#desktop-main #hero .nav {
+  padding: 1vh 0 4vh;
+}
+#desktop-main #hero .nav .c2 {
+  padding: 0 40px;
+}
+#desktop-main #hero .nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
 }
 #desktop-main #intro-mod {
   margin: 0 auto 10vh;
 }
-#desktop-main #intro-mod #intro-content .c1 h2 {
-  padding: 5px 20px;
+#desktop-main #intro-mod .intro-subhead {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  line-height: 42px;
+  padding-bottom: 10vh;
 }
-#desktop-main #intro-mod #intro-content .c1 p {
-  padding: 10px 30px;
+#desktop-main #intro-mod #intro-content {
+  padding: 5vh 2vh;
+}
+#desktop-main #intro-mod #intro-content h2 {
+  padding: 5px 30px;
+}
+#desktop-main #intro-mod #intro-content p {
+  padding: 10px 40px;
   font-size: 20px;
   line-height: 30px;
-}
-#desktop-main #intro-mod #intro-content .c2 {
-  width: 40%;
 }
 #desktop-main #operation-mod {
   margin: 0 auto 10vh;
 }
+#desktop-main #operation-mod h2 {
+  font-size: 4.2rem;
+  text-align: center;
+}
+#desktop-main #operation-mod h2.main-headline {
+  margin: 10vh 0 5vh;
+}
 #desktop-main #operation-mod h3 {
   padding: 40px 0 20px;
 }
+#desktop-main #operation-mod h3.headline-role {
+  padding: 10px 30px 0;
+  text-align: left;
+  margin-bottom: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: underline;
+}
 #desktop-main #operation-mod .c1 {
-  width: 50%;
-  padding-right: 5px;
+  width: 45%;
 }
 #desktop-main #operation-mod .c1 #operation-container .tile h4 {
   line-height: 148px;
-  font-family: 'Zoltana-Regular', Arial, sans-serif;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -182,36 +206,37 @@ a {
   background-size: 100%;
 }
 #desktop-main #operation-mod .c1 #operation-container .tile-2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountainside_town_2_to_1_ar_tile.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_nest_renew_1_to_1_ar_tile.png');
   background-size: 100%;
   margin: 12px 0;
 }
 #desktop-main #operation-mod .c1 #operation-container .tile-3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountain_bg_tile.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountainside_town_2_to_1_ar_tile.png');
   background-size: 100%;
   margin: 12px 0;
 }
 #desktop-main #operation-mod .c1 #operation-container .tile-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_cds_1_to_1_ar_tile.png');
+  background-size: 100%;
+  margin: 12px 0;
+}
+#desktop-main #operation-mod .c1 #operation-container .tile-5 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_cafe_1_to_1_ar_tile.png');
   background-size: 100%;
 }
 #desktop-main #operation-mod .c2 {
-  width: 50%;
+  width: 55%;
   height: 100%;
-  padding-left: 5px;
+  padding: 5%;
 }
-#desktop-main #operation-mod .c2 .golden-gradient-brown-wrapper,
-#desktop-main #operation-mod .c2 .golden-gradient-brown-content {
-  height: 100%;
-}
-#desktop-main #operation-mod .c2 h4.headline {
-  padding: 25px 20px 5px;
-  font-family: 'Zoltana-Regular', Arial, sans-serif;
+#desktop-main #operation-mod .c2 h2.headline {
+  padding: 30px 20px 15px;
 }
 #desktop-main #operation-mod .c2 p {
   padding: 10px 30px;
   font-size: 20px;
   line-height: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #desktop-main #operation-mod .c2 #experience-cover,
 #desktop-main #operation-mod .c2 #experience-1 {
@@ -219,23 +244,25 @@ a {
 }
 #desktop-main #portfolio-mod {
   text-align: center;
-  margin-bottom: 10vh;
   background-color: #151006;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), #000000), url('./assets/ghibli_mailclerk_banner_faded.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.01), #000000), url('./assets/ghibli_mailclerk_banner_faded.png');
   background-position: top;
   background-repeat: no-repeat;
+  background-size: 100%;
   padding: 10vh 0;
 }
 #desktop-main #portfolio-mod #portfolio-container h2 {
   font-family: 'Saint-Carell-Regular', Arial, sans-serif;
   color: #fffff0;
   font-size: 3.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 #desktop-main #portfolio-mod #portfolio-container p.subhead {
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 40px;
+  padding: 0 50px;
+  font-family: Georgia, Arial, sans-serif;
 }
 #desktop-main #portfolio-mod #portfolio-container img {
   margin: 0 auto;
@@ -244,24 +271,20 @@ a {
   padding: 0 25px;
   text-align: left;
 }
-#desktop-main #portfolio-mod #portfolio-container #gallery-container .tile .tile-item-bg {
-  background-color: #fffff0;
-  max-width: 302px;
-}
 #desktop-main #portfolio-mod #portfolio-container #gallery-container .tile .tile-item-bg .tile-container {
   margin: 4px;
-  max-width: 300px;
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 600px;
 }
 #desktop-main #portfolio-mod #portfolio-container #gallery-container .tile div {
-  margin: 0 auto 25px;
+  margin: 0 auto 45px;
   background-color: #130e03;
-  border-radius: 25px;
+  box-shadow: 0.1rem 0.2rem #f7e77c, -0.1rem -0.2rem #996e12;
 }
 #desktop-main #portfolio-mod #portfolio-container #gallery-container .tile div p {
   padding: 15px 20px 7px;
-}
-#desktop-main #portfolio-mod #portfolio-container #gallery-container .tile div img {
-  border-radius: 25px;
+  font-family: Georgia, Arial, sans-serif;
 }
 #desktop-main #portfolio-mod #portfolio-container #gallery-container .tile div .medium {
   font-size: 14px;
@@ -274,16 +297,58 @@ a {
   line-height: 30px;
 }
 #desktop-main #portfolio-mod #portfolio-container #gallery-container .tile div a {
-  padding: 15px 0 21px;
-  text-align: center;
+  padding: 15px 20px 21px;
+  text-align: left;
   width: 100%;
   display: block;
-  font-family: 'Fontin-Regular', Arial, sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
+  font-family: Georgia, Arial, sans-serif;
+  text-decoration: underline;
   letter-spacing: 0.2px;
   font-size: 18px;
   line-height: 30px;
+}
+#desktop-main #origins-mod {
+  background-image: url('./assets/ghibli_workshop_wide_v2.png');
+  background-size: 100%;
+  background-position: top;
+  padding: 10vh 0;
+}
+#desktop-main #origins-mod .golden-gradient-brown-wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+#desktop-main #origins-mod .golden-gradient-brown-wrapper .golden-gradient-brown-content h2 {
+  font-size: 3.2rem;
+  padding: 10vh 0;
+}
+footer {
+  background-color: #0c0902;
+  border-top: 1px solid #f7e77c;
+}
+footer #inner-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10vh 0 6vh;
+}
+footer #inner-wrapper p {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Georgia, Arial, sans-serif;
+}
+footer #inner-wrapper .title {
+  margin-bottom: 15px;
+}
+footer #inner-wrapper .logo {
+  margin: 0 auto 20px;
+  border-radius: 25px;
+}
+footer #inner-wrapper .social {
+  font-size: 24px;
+  color: #fffff0;
+  margin-bottom: 15px;
+}
+footer #inner-wrapper .social td {
+  padding: 15px 25px;
 }
 @media only screen and (max-width: 749px) {
   #desktop-main {
@@ -294,24 +359,6 @@ a {
   }
 }
 @media only screen and (min-width: 750px) and (max-width: 991px) {
-  #desktop-main #gc-hero-banner {
-    height: 400px;
-    width: 685px;
-  }
-  #desktop-main #gc-hero-banner #gc-banner {
-    height: 130px;
-    background-size: 340px 100px;
-  }
-  #desktop-main #gc-hero-banner #gc-banner h1 {
-    font-size: 20px;
-    line-height: 40px;
-  }
-  #desktop-main #gc-hero-banner #gc-banner h1.main-banner-header {
-    padding: 26px 0 0;
-  }
-  #desktop-main #gc-hero-banner #gc-banner h1.sub-banner-header {
-    padding: 3px 0 0;
-  }
   #desktop-main #intro-mod {
     width: 685px;
   }
@@ -326,7 +373,6 @@ a {
     width: 100%;
   }
   #desktop-main #operation-mod {
-    width: 685px;
     margin-bottom: 20px;
   }
   #desktop-main #operation-mod .c1 #operation-container .tile h4 {
@@ -341,14 +387,18 @@ a {
     background-size: 100%;
   }
   #desktop-main #operation-mod .c1 #operation-container .tile.tile-2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountainside_town_2_to_1_ar.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_nest_renew_1_to_1_ar.png');
     background-size: 100%;
   }
   #desktop-main #operation-mod .c1 #operation-container .tile.tile-3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountain_bg.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountainside_town_2_to_1_ar.png');
     background-size: 100%;
   }
   #desktop-main #operation-mod .c1 #operation-container .tile.tile-4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_cds_1_to_1_ar.png');
+    background-size: 100%;
+  }
+  #desktop-main #operation-mod .c1 #operation-container .tile.tile-5 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_cafe_1_to_1_ar.png');
     background-size: 100%;
   }
@@ -362,24 +412,6 @@ a {
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  #desktop-main #gc-hero-banner {
-    height: 500px;
-    width: 790px;
-  }
-  #desktop-main #gc-hero-banner #gc-banner {
-    height: 215px;
-    background-size: 400px 140px;
-  }
-  #desktop-main #gc-hero-banner #gc-banner h1 {
-    font-size: 26px;
-    line-height: 55px;
-  }
-  #desktop-main #gc-hero-banner #gc-banner h1.main-banner-header {
-    padding: 53px 0 0;
-  }
-  #desktop-main #gc-hero-banner #gc-banner h1.sub-banner-header {
-    padding: 5px 0 0;
-  }
   #desktop-main #intro-mod {
     width: 790px;
   }
@@ -393,9 +425,6 @@ a {
   #desktop-main #intro-mod #intro-content .c2.stacked {
     width: 100%;
   }
-  #desktop-main #operation-mod {
-    width: 790px;
-  }
   #desktop-main #operation-mod .c1 #operation-container .tile h4 {
     line-height: 170px;
     font-size: 38px;
@@ -408,42 +437,27 @@ a {
     background-size: 100%;
   }
   #desktop-main #operation-mod .c1 #operation-container .tile.tile-2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountainside_town_2_to_1_ar.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_nest_renew_1_to_1_ar.png');
     background-size: 100%;
   }
   #desktop-main #operation-mod .c1 #operation-container .tile.tile-3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountain_bg.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_mountainside_town_2_to_1_ar.png');
     background-size: 100%;
   }
   #desktop-main #operation-mod .c1 #operation-container .tile.tile-4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_cds_1_to_1_ar.png');
+    background-size: 100%;
+  }
+  #desktop-main #operation-mod .c1 #operation-container .tile.tile-5 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/operation_tiles/ghibli_cafe_1_to_1_ar.png');
     background-size: 100%;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  #desktop-main #gc-hero-banner {
-    height: 600px;
-    width: 1000px;
-  }
-  #desktop-main #gc-hero-banner #gc-banner {
-    height: 215px;
-    background-size: 500px 180px;
-  }
-  #desktop-main #gc-hero-banner #gc-banner h1 {
-    font-size: 32px;
-    line-height: 72px;
-  }
-  #desktop-main #gc-hero-banner #gc-banner h1.main-banner-header {
-    padding: 35px 0 0;
-  }
-  #desktop-main #gc-hero-banner #gc-banner h1.sub-banner-header {
-    padding: 6px 0 0;
-  }
   #desktop-main #intro-mod {
     width: 1000px;
   }
   #desktop-main #intro-mod #intro-content .c1 h2 {
-    padding: 2px 15px;
     font-size: 38px;
     line-height: 46px;
   }
@@ -451,9 +465,6 @@ a {
     padding: 10px 25px;
     font-size: 18px;
     line-height: 26px;
-  }
-  #desktop-main #operation-mod {
-    width: 1000px;
   }
   #desktop-main #operation-mod .c1 {
     padding-right: 5px;
@@ -464,8 +475,7 @@ a {
   #desktop-main #operation-mod .c2 {
     padding-left: 5px;
   }
-  #desktop-main #operation-mod .c2 h4.headline {
-    padding: 25px 15px 5px;
+  #desktop-main #operation-mod .c2 h2.headline {
     font-size: 38px;
     line-height: 46px;
   }
@@ -476,26 +486,7 @@ a {
   }
 }
 @media only screen and (min-width: 1400px) {
-  #desktop-main #intro-mod,
-  #desktop-main #operation-mod {
+  #desktop-main #intro-mod {
     width: 1200px;
-  }
-  #desktop-main #gc-hero-banner {
-    height: 700px;
-    width: 1200px;
-  }
-  #desktop-main #gc-hero-banner #gc-banner {
-    height: 215px;
-    background-size: 600px 200px;
-  }
-  #desktop-main #gc-hero-banner #gc-banner h1 {
-    font-size: 36px;
-    line-height: 80px;
-  }
-  #desktop-main #gc-hero-banner #gc-banner h1.main-banner-header {
-    padding: 30px 0 0;
-  }
-  #desktop-main #gc-hero-banner #gc-banner h1.sub-banner-header {
-    padding: 5px 0 0;
   }
 }

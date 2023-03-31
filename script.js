@@ -7,7 +7,8 @@ function showExperience(expNum) {
   let exp2 = document.getElementById("experience-2");
   let exp3 = document.getElementById("experience-3");
   let exp4 = document.getElementById("experience-4");
-  let expList = [exp1, exp2, exp3, exp4];
+  let exp5 = document.getElementById("experience-5");
+  let expList = [exp1, exp2, exp3, exp4, exp5];
 
   // Check to see if the user is trying to enable an already displaying tile
   if(currentExpTile !== expNum) {
