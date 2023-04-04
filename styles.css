@@ -117,7 +117,7 @@ a {
 }
 #desktop-main #hero {
   padding: 4vh 0 0;
-  margin: 0 auto 10vh;
+  margin: 0 auto 15vh;
 }
 #desktop-main #hero .title .c2 {
   padding: 10px 25px;
@@ -142,7 +142,7 @@ a {
   line-height: 24px;
 }
 #desktop-main #intro-mod {
-  margin: 0 auto 10vh;
+  margin: 0 auto 15vh;
 }
 #desktop-main #intro-mod .intro-subhead {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -154,7 +154,7 @@ a {
   padding: 5vh 2vh;
 }
 #desktop-main #intro-mod #intro-content h2 {
-  padding: 5px 30px;
+  padding: 5px 30px 20px;
 }
 #desktop-main #intro-mod #intro-content p {
   padding: 10px 40px;
@@ -162,7 +162,7 @@ a {
   line-height: 30px;
 }
 #desktop-main #operation-mod {
-  margin: 0 auto 10vh;
+  margin: 0 auto 15vh;
 }
 #desktop-main #operation-mod h2 {
   font-size: 4.2rem;
@@ -170,6 +170,9 @@ a {
 }
 #desktop-main #operation-mod h2.main-headline {
   margin: 10vh 0 5vh;
+}
+#desktop-main #operation-mod h2.headline {
+  margin-bottom: 20px;
 }
 #desktop-main #operation-mod h3 {
   padding: 40px 0 20px;

@@ -49,7 +49,7 @@
 
 // General spacing and widths
 @max-width: 1400px;
-@module-bot-margin: 10vh;
+@module-bot-margin: 15vh;
 
 // MQ module widths for padded mods
 @xl-mod-width: 1200px;
@@ -206,7 +206,7 @@ a {
     #intro-content { 
       padding: 5vh 2vh;
       h2 {
-        padding: 5px 30px;
+        padding: 5px 30px 20px;
       }
       p {
         padding: 10px 40px;
@@ -226,6 +226,9 @@ a {
     }
     h2.main-headline {
       margin: 10vh 0 5vh;
+    }
+    h2.headline {
+      margin-bottom: 20px;
     }
     h3 {
       padding: 40px 0 20px;
@@ -436,8 +439,7 @@ footer {
 
 // Small devices - Tablet-specific
 @media only screen and (min-width: 750px) and (max-width: 991px) {
-  #desktop-main {
-    
+  #desktop-main { 
     #intro-mod {
       width: @sm-mod-width;
       #intro-content {
